@@ -6,7 +6,7 @@
 
 主体代码在scheduler，文件结构如下，方案及PPT在ducuments
 
-.
+```.
 ├── Dockerfile
 ├── client
 │   └── client.go
@@ -40,4 +40,4 @@
         ├── seelog
         │   └── seelog.go
         ├── static.go
-        └── stdlog.go
+        └── stdlog.go```
