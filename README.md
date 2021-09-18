@@ -18,17 +18,17 @@
 │   │   └── log.xml
 │   └── log.xml
 ├── core
-│   ├── node.go				  节点信息
-│   └── router.go				主要文件，策略实现
+│   ├── node.go			节点信息
+│   └── router.go		主要文件，策略实现
 ├── main 
-├── main.go						程序入口
+├── main.go			程序入口
 ├── model
 │   └── request.go			
 ├── proto
-│   ├── scheduler.pb.go	grpc生成文件
-│   └── scheduler.proto	scheduler接口描述文件
+│   ├── scheduler.pb.go	        grpc生成文件
+│   └── scheduler.proto	        scheduler接口描述文件
 ├── server
-│   └── server.go				scheduler接口
+│   └── server.go		scheduler接口
 └── utils
     ├── env
     │   └── env.go				
