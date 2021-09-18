@@ -1,0 +1,39 @@
+// Protocol for apiserver.
+
+syntax = "proto3";
+
+package apiserverproto;
+
+service APIServer {
+    rpc InvokeFunction (InvokeFunctionRequest) returns (InvokeFunctionReply) {
+    }
+    rpc ListFunctions (ListFunctionsRequest) returns (ListFunctionsReply) {
+    }
+}
+
+message InvokeFunctionRequest {
+    string account_id = 1;
+    string function_name = 2;
+    bytes event = 3;
+}
+
+message InvokeFunctionReply {
+    string request_id = 1;
+    bytes body = 2;
+    int64 server_side_latency_in_ms = 3;
+}
+
+message ListFunctionsRequest {
+}
+
+message ListFunctionsReply {
+    string request_id = 1;
+    repeated FunctionConfig functions = 2;
+}
+
+message FunctionConfig {
+    string function_name = 1;
+    int64 timeout_in_ms = 2;
+    int64 memory_in_bytes = 3;
+    string handler = 4;
+}

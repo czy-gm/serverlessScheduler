@@ -1,0 +1,7 @@
+FROM debian:stable-slim
+
+ENV SERVICE_PORT=10600
+COPY ./main /
+WORKDIR /
+EXPOSE 10600
+ENTRYPOINT ["/main"]

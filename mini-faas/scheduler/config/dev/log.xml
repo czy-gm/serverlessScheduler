@@ -1,0 +1,9 @@
+<seelog type="asynctimer" asyncinterval="5000000" minlevel="info">
+    <outputs formatid="main">
+        <rollingfile formatid="main" type="size" filename="/aliyuncnpc/scheduler/log/application.log" maxsize="104857600" maxrolls="4" />
+    </outputs>
+    <formats>
+        <!--In production, we should use simpler formatter (e.g. no line info) to improve performance -->
+        <format id="main" format="%UTCDate(2006-01-02 15:04:05.000) [%LEVEL] %RelFile:%FuncShort:%Line %Msg%n"/>
+    </formats>
+</seelog>
