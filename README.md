@@ -1,6 +1,7 @@
 # serverlessScheduler
 
 天池首届云原生编程挑战赛亚军-复赛方案
+排名（2/11060） 正常赛（0.98752） 加时赛（0.95105）
 
 [赛题链接](https://tianchi.aliyun.com/competition/entrance/231793/introduction)
 
